@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <button class="btn btn-primary" on-click="addbook">
+        <i class="icon-plus-sign"></i>
+        Add book
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    {{#books:num}}
+
+    <div class="span3 book-container" on-tap="showdetails">
+      <div class="book-cover-image">
+        <img src="{{cover_url}}" alt="{{title}}" />
+      </div>
+      <div class="book-info">
+        <p class="book-title">{{title}}</p>
+        <p class="book-author">{{author}}</p>
+      </div>
+    </div>
+
+    {{#shouldCreateNewRow(num)}}
+  </div>
+  <div class="row">
+    {{/shouldCreateNewRow}}
+
+    {{/books}}
+  </div>
+</div>

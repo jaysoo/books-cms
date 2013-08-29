@@ -1,3 +1,19 @@
 $iconSpritePath: '/images/glyphicons-halflings.png';
+@import 'sass-bootstrap/lib/_mixins';
 @import 'sass-bootstrap/lib/bootstrap';
 @import 'sass-bootstrap/lib/responsive';
+
+
+// Base
+
+* {
+  box-sizing: padding-box;
+}
+
+
+
+// Modules
+
+.book-title {
+  font-weight: bold;
+}

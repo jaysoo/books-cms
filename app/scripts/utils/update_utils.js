@@ -1,11 +1,19 @@
 'use strict';
 
 define(function() {
+  var helpers = function(obj) {
+    return {
+      set: function(keypath) {
+        return function(data) {
+          obj.set(keypath, data);
+        };
+      }
+    };
+  };
+
   return {
-    setter: function(ractive, keypath) {
-      return function(data) {
-        ractive.set(keypath, data);
-      };
+    on: function(obj) {
+      return helpers(obj);
     }
   };
 });

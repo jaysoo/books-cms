@@ -1,10 +1,27 @@
 [
   {
     "title": "Clean Code",
-    "author": "Robert C. Martin"
+    "author": "Robert C. Martin",
+    "cover_url": "images/covers/clean_code_cover.jpeg"
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "cover_url": "images/covers/clean_code_cover.jpeg"
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "cover_url": "images/covers/clean_code_cover.jpeg"
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "cover_url": "images/covers/clean_code_cover.jpeg"
   },
   {
     "title": "Big Data",
-    "author": "Nathan Marz"
+    "author": "Nathan Marz",
+    "cover_url": "images/covers/big_data_cover.jpeg"
   }
 ]

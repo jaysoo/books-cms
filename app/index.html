@@ -9,16 +9,25 @@
     <title>Books</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/brick.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
-    <div class="container">
-      <h1>Books</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span12">
+          <h1>Books</h1>
+        </div>
+      </div>
 
-      <section id="books"></section>
+      <div class="row">
+        <div class="span12" id="booksCtrl">
+          <div id="booksContainer"></div>
+        </div>
+      </div>
     </div>
 
     <script src="scripts/vendor/mozilla/brick.js"></script>

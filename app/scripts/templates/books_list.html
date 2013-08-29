@@ -12,7 +12,7 @@
 
     <div class="span3 book-container" on-tap="showdetails">
       <div class="book-cover-image">
-        <img src="{{cover_url}}" alt="{{title}}" />
+        <img src="{{image_url}}" alt="{{title}}" />
       </div>
       <div class="book-info">
         <p class="book-title">{{title}}</p>
@@ -26,5 +26,11 @@
     {{/shouldCreateNewRow}}
 
     {{/books}}
+
+    {{^hasBooks(books)}}
+    <div class="span12">
+      <p>No books added yet!</p>
+    </div>
+    {{/hasBooks}}
   </div>
 </div>

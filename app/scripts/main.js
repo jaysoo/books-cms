@@ -8,6 +8,9 @@ require.config({
     ractive: {
       exports: 'Ractive'
     },
+    base64: {
+      exports: 'Base64'
+    },
     bootstrap: {
       deps: ['jquery'],
       exports: 'jquery'
@@ -18,7 +21,8 @@ require.config({
     lodash: '../bower_components/lodash/lodash',
     ractive: '../bower_components/Ractive/ractive',
     bootstrap: 'vendor/bootstrap',
-    text: '../bower_components/requirejs-text/text'
+    text: '../bower_components/requirejs-text/text',
+    base64: '../bower_components/js-base64/base64'
   }
 });
 

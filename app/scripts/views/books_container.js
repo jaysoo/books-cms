@@ -11,7 +11,7 @@ define([
       template: BooksContainerHtml,
 
       showDetails: function() {
-        this.nodes.booksSlidebox.slideTo(2)
+        this.nodes.booksSlidebox.slideTo(2);
       },
 
       showList: function() {

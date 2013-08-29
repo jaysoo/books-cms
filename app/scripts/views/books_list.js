@@ -14,6 +14,10 @@ define([
         // Empty initially
         books: [],
 
+        hasBooks: function(books) {
+          return books.length > 0;
+        },
+
         shouldCreateNewRow: function(num) {
           return num % 4 === 3;
         }

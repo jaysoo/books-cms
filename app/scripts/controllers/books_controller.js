@@ -4,10 +4,11 @@ define([
     'lodash',
     'ractive',
 
+    'services/books_service',
     'utils/object_utils'
   ],
 
-  function(_, Ractive, ObjectUtils) {
+  function(_, Ractive, BooksSerice, ObjectUtils) {
     var BooksCtrl = Ractive.extend({
       template: null,
 
@@ -56,6 +57,15 @@ define([
 
       submitAdd: function(e) {
         e.original.preventDefault();
+
+        var book = e.context;
+        BooksSerice.create(book);
+
+        var books = this.data.listView.get('books');
+        books.push(book);
+        this.data.listView.set('books', books);
+
+        this.data.containerView.hideAddForm();
       }
     });
 

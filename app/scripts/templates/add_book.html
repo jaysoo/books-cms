@@ -1,15 +1,26 @@
-<form on-submit="submit">
+<form>
   <fieldset>
     <label>
-      Choose a file:
-      <input type="file" />
+      Title:
+      <input type="text" class="input-medium" value="{{title}}"/>
+    </label>
+
+    <label>
+      Author:
+      <input type="text" class="input-medium" value="{{author}}" />
+    </label>
+
+    <label>
+      Cover:
+      <input type="file" class="input-medium" on-change="upload"/>
     </label>
   </fieldset>
 
-  <button class="btn btn-primary">
+  <button class="btn btn-primary" on-click="submit">
     <i class="icon-plus-sign"></i>
     Add book
   </button>
 
   or <a href="#" onclick="return false" on-tap="cancel">cancel</a>
 </form>
+
